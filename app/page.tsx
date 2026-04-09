@@ -199,7 +199,7 @@ export default function Home() {
             <div className="w-full relative lg:h-[600px] flex flex-col items-center lg:block">
               
               {/* SM: Car Image shown above form, LG: Absolute positioned */}
-              <div className="lg:absolute lg:right-92 lg:bottom-39 lg:w-110 w-48 sm:w-64 mb-4 lg:mb-0 lg:z-10 order-1 lg:order-2">
+              <div className="lg:absolute lg:right-92 lg:bottom-10 lg:w-110 w-48 sm:w-64 mb-4 lg:mb-0 lg:z-10 order-1 lg:order-2">
                 <img 
                   src="/homebanner/image.png" 
                   alt="Car Loan" 
