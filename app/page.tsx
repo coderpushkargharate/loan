@@ -127,7 +127,7 @@ export default function Home() {
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             
             {/* Left Content */}
-            <div className="w-full space-y-4 sm:space-y-6 text-center lg:text-left " >
+            <div className="w-full space-y-4 sm:space-y-6 text-center lg:text-left mt-0 lg:mt-[-135px]" >
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Get Loan Approved in{" "}
                 <span className="text-blue-600">24 Hours in Odisha</span>
@@ -172,26 +172,7 @@ export default function Home() {
                   <p className="text-xs sm:text-sm font-semibold text-gray-800">100% Secure Process</p>
                 </div>
               </div>
- {/* Trust Badge */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-2 sm:mt-12">
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100">
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
-              <p className="text-gray-800 font-semibold text-center sm:text-left text-sm sm:text-base">Trusted by 10,000+ Customers Across Odisha</p>
-              <div className="flex items-center space-x-2 sm:space-x-3 bg-gray-50 rounded-lg px-3 sm:px-4 py-2">
-                <span className="text-lg sm:text-xl font-bold text-blue-600">Google</span>
-                <div className="flex items-center">
-                  <span className="font-bold text-gray-800 mr-1 sm:mr-2 text-sm sm:text-base">4.8</span>
-                  <div className="flex text-yellow-400">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
-                    ))}
-                  </div>
-                  <span className="text-gray-600 text-xs sm:text-sm ml-1 sm:ml-2">(1200+ Reviews)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
           
             </div>
 
@@ -199,7 +180,7 @@ export default function Home() {
             <div className="w-full relative lg:h-[600px] flex flex-col items-center lg:block">
               
               {/* SM: Car Image shown above form, LG: Absolute positioned */}
-              <div className="lg:absolute lg:right-92 lg:bottom-10 lg:w-110 w-48 sm:w-64 mb-4 lg:mb-0 lg:z-10 order-1 lg:order-2">
+              <div className="lg:absolute lg:right-92 lg:bottom-39 lg:w-110 w-48 sm:w-64 mb-4 lg:mb-0 lg:z-10 order-1 lg:order-2">
                 <img 
                   src="/homebanner/image.png" 
                   alt="Car Loan" 
@@ -276,11 +257,31 @@ export default function Home() {
             </div>
             
           </div>
+          {/* Google Review Badge - Full Width in Hero Section */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-0 lg:mt-[-135px] w-full">
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 w-full">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 w-full">
+              <p className="text-gray-800 font-semibold text-center sm:text-left text-sm sm:text-base">Trusted by 10,000+ Customers Across Odisha</p>
+              <div className="flex items-center space-x-2 sm:space-x-3 bg-gray-50 rounded-lg px-3 sm:px-4 py-2">
+                <span className="text-lg sm:text-xl font-bold text-blue-600">Google</span>
+                <div className="flex items-center">
+                  <span className="font-bold text-gray-800 mr-1 sm:mr-2 text-sm sm:text-base">4.8</span>
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-current" />
+                    ))}
+                  </div>
+                  <span className="text-gray-600 text-xs sm:text-sm ml-1 sm:ml-2">(1200+ Reviews)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
           
         </div>
 
-       
-
+        
         {/* Testimonials - SM: 1 column, MD: 3 columns */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 sm:mt-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
@@ -426,6 +427,7 @@ export default function Home() {
               ))}
             </div>
           </div>
+          
         </div>
       </section>
 
