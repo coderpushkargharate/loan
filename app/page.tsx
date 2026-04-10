@@ -124,66 +124,65 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
-          {/* 📱 MOBILE LAYOUT: Left Content + Image side-by-side, Form at bottom */}
+          {/* 📱 MOBILE LAYOUT: Merged Text + Image, Form at bottom */}
           <div className="lg:hidden">
-            {/* Top Row: Left Content (left) + Car Image (right) - Better spacing */}
-            <div className="grid grid-cols-2 gap-2 items-start mb-6">
-              {/* Left Content - Mobile */}
-              <div className="space-y-3 text-left pr-1">
-                <h1 className="text-xl sm:text-2xl font-bold text-gray-900 leading-tight">
+            {/* Merged Hero Card: Text overlaid on image area */}
+            <div className="relative  rounded-2xl overflow-hidden mb-6 shadow-xl">
+              {/* Background Image with overlay */}
+              <div className="absolute inset-0">
+                <img 
+                  src="/homebanner/image.png" 
+                  alt="Car Loan" 
+                  className="w-full h-64 sm:h-72 object-contain object-right drop-shadow-lg opacity-90"
+                />
+                <div className="absolute inset-0  via-blue-800/40 to-transparent"></div>
+              </div>
+              
+              {/* Text Content - Overlaid on image */}
+              <div className="relative z-10 p-4 sm:p-5" >
+                <h1 className="text-lg sm:text-xl font-bold w-75 text-black leading-tight mb-2">
                   Get Loan Approved in{" "}
-                  <span className="text-blue-600">24 Hours in Odisha</span>
+                  <span className="text-orange-300">24 Hours in Odisha</span>
                 </h1>
 
-                <div className="flex items-center space-x-1.5 bg-green-50 w-fit px-2.5 py-1.5 rounded-full">
-                  <CheckCircle className="w-3.5 h-3.5 text-green-600" />
-                  <span className="font-semibold text-[10px] sm:text-xs text-green-700">LOAN APPROVED IN 24 HOURS*</span>
+                <div className="flex items-center space-x-1.5 bg-black/20 w-fit px-2.5 py-1.5 rounded-full backdrop-blur-sm">
+                  <CheckCircle className="w-3.5 h-3.5 text-green-300" />
+                  <span className="font-semibold text-[10px] sm:text-xs text-black">LOAN APPROVED IN 24 HOURS*</span>
                 </div>
 
-                <div className="flex flex-col gap-1.5 text-[11px] sm:text-xs">
+                <div className="flex flex-col gap-1.5 mt-3 text-[11px] sm:text-xs">
                   <div className="flex items-center space-x-1.5">
-                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-700">Hassle-free process</span>
+                    <div className="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></div>
+                    <span className="text-black/90">Hassle-free process</span>
                   </div>
                   <div className="flex items-center space-x-1.5">
-                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full flex-shrink-0"></div>
-                    <span className="text-gray-700">Low interest rates</span>
+                    <div className="w-1.5 h-1.5 bg-orange-400 rounded-full flex-shrink-0"></div>
+                    <span className="text-black/90">Low interest rates</span>
                   </div>
                 </div>
 
-                <p className="text-gray-600 font-medium text-[11px] sm:text-xs">Trusted by 10,000+ customers</p>
+                <p className="text-black/80 font-medium text-[11px] sm:text-xs mt-2">Trusted by 10,000+ customers</p>
 
-                {/* Features - Mobile */}
-                <div className="grid grid-cols-3 gap-1.5">
-                  <div className="text-center p-2 bg-white rounded-lg shadow-sm border border-gray-100">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1">
-                      <Clock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600" />
+                {/* Features - Mobile - overlaid */}
+                <div className="grid grid-cols-3 gap-1.5 mt-3 w-75">
+                  <div className="text-center p-2 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
+                    <div className="w-7 h-7 bg-orange-500/30 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <Clock className="w-3.5 h-3.5 text-black" />
                     </div>
-                    <p className="text-[10px] sm:text-xs font-semibold text-gray-800 leading-tight">Quick Approval</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-black leading-tight">Quick Approval</p>
                   </div>
-                  <div className="text-center p-2 bg-white rounded-lg shadow-sm border border-gray-100">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1">
-                      <Percent className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600" />
+                  <div className="text-center p-2 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
+                    <div className="w-7 h-7 bg-orange-500/30 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <Percent className="w-3.5 h-3.5 text-black" />
                     </div>
-                    <p className="text-[10px] sm:text-xs font-semibold text-gray-800 leading-tight">Lowest Rates</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-black leading-tight">Lowest Rates</p>
                   </div>
-                  <div className="text-center p-2 bg-white rounded-lg shadow-sm border border-gray-100">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1">
-                      <Shield className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-600" />
+                  <div className="text-center p-2 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
+                    <div className="w-7 h-7 bg-orange-500/30 rounded-full flex items-center justify-center mx-auto mb-1">
+                      <Shield className="w-3.5 h-3.5 text-black" />
                     </div>
-                    <p className="text-[10px] sm:text-xs font-semibold text-gray-800 leading-tight">100% Secure</p>
+                    <p className="text-[10px] sm:text-xs font-semibold text-black leading-tight">100% Secure</p>
                   </div>
-                </div>
-              </div>
-
-              {/* Car Image - Mobile: Right side with better sizing */}
-              <div className="flex justify-end items-start relative z-20 pl-1">
-                <div className="w-full max-w-[210px] sm:max-w-[210px]">
-                  <img 
-                    src="/homebanner/image.png" 
-                    alt="Car Loan" 
-                    className="w-full h-auto object-contain drop-shadow-lg"
-                  />
                 </div>
               </div>
             </div>
