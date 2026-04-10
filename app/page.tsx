@@ -122,14 +122,14 @@ export default function Home() {
           <div className="absolute top-40 -right-40 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl"></div>
         </div>
 
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           {/* 📱 MOBILE LAYOUT: Vertical Stack - Heading → Car Image → Content → Form */}
           <div className="lg:hidden">
             
             {/* 1️⃣ Heading - Mobile */}
-            <div className=" mb-4">
-              <h1 className="text-3xl font-bold text-gray-900 leading-tight">
+            <div className=" ">
+              <h1 className="text-4xl font-bold text-gray-900 leading-tight">
                 Get Loan Approved in{" "}
                 <span className="text-blue-600">24 Hours in Odisha</span>
               </h1>
@@ -389,7 +389,7 @@ export default function Home() {
           </div>
 
           {/* Google Review Badge - Full Width in Hero Section */}
-          <div className="max-w-[85rem] mx-auto mt-5 lg:mt-0 px-4 sm:px-6 lg:px-0 mt-0 lg:mt-[-135px] w-full">
+          <div className="max-w-7xl mx-auto mt-5 lg:mt-0 px-4 sm:px-6 lg:px-0 mt-0 lg:mt-[-135px] w-full">
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 w-full">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 w-full">
                 <p className="text-gray-800 font-semibold text-center sm:text-left text-sm sm:text-base">Trusted by 10,000+ Customers Across Odisha</p>
