@@ -140,14 +140,14 @@ export default function Home() {
               
               {/* Text Content - Overlaid on image */}
               <div className="relative z-10 p-4 sm:p-5" >
-                <h1 className="text-lg sm:text-xl font-bold w-75 text-black leading-tight mb-2">
+                <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold w-75 text-black leading-tight mb-2">
                   Get Loan Approved in{" "}
                   <span className="text-orange-300">24 Hours in Odisha</span>
                 </h1>
 
                 <div className="flex items-center space-x-1.5 bg-black/20 w-fit px-2.5 py-1.5 rounded-full backdrop-blur-sm">
                   <CheckCircle className="w-3.5 h-3.5 text-green-300" />
-                  <span className="font-semibold text-[10px] sm:text-xs text-black">LOAN APPROVED IN 24 HOURS*</span>
+                  <span className="font-semibold text-[11px] sm:text-xs text-black">LOAN APPROVED IN 24 HOURS*</span>
                 </div>
 
                 <div className="flex flex-col gap-1.5 mt-3 text-[11px] sm:text-xs">
@@ -164,7 +164,7 @@ export default function Home() {
                 <p className="text-black/80 font-medium text-[11px] sm:text-xs mt-2">Trusted by 10,000+ customers</p>
 
                 {/* Features - Mobile - overlaid */}
-                <div className="grid grid-cols-3 gap-1.5 mt-3 w-75">
+                <div className="grid grid-cols-3 gap-1.5 mt-3 w-72">
                   <div className="text-center p-2 bg-white/10 rounded-lg backdrop-blur-sm border border-white/20">
                     <div className="w-7 h-7 bg-orange-500/30 rounded-full flex items-center justify-center mx-auto mb-1">
                       <Clock className="w-3.5 h-3.5 text-black" />
