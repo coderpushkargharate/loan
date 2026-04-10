@@ -124,71 +124,71 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
-          {/* 📱 MOBILE LAYOUT: Vertical Stack - Heading → Car Image → Content → Form */}
+          {/* 📱 MOBILE LAYOUT: Left Content + Image side-by-side, Form at bottom */}
           <div className="lg:hidden">
-            
-            {/* 1️⃣ Heading - Mobile */}
-            <div className=" ">
-              <h1 className="text-4xl font-bold text-gray-900 leading-tight">
-                Get Loan Approved in{" "}
-                <span className="text-blue-600">24 Hours in Odisha</span>
-              </h1>
-            </div>
+            {/* Top Row: Left Content (left) + Car Image (right) - Equal sizing */}
+            <div className="grid grid-cols-2 gap-3 items-start mb-6">
+              {/* Left Content - Mobile */}
+              <div className="space-y-4 text-left">
+                <h1 className="text-2xl font-bold text-gray-900 leading-tight">
+                  Get Loan Approved in{" "}
+                  <span className="text-blue-600">24 Hours in Odisha</span>
+                </h1>
 
-            {/* 2️⃣ Car Image - Mobile: Centered below heading */}
-            <div className="flex justify-center mb-5">
-              <img 
-                src="/homebanner/image.png" 
-                alt="Car Loan" 
-                className="w-48 h-auto object-contain drop-shadow-lg"
-              />
-            </div>
+                <div className="flex items-center space-x-2 bg-green-50 w-fit px-3 py-1.5 rounded-full">
+                  <CheckCircle className="w-4 h-4 text-green-600" />
+                  <span className="font-semibold text-xs text-green-700">LOAN APPROVED IN 24 HOURS*</span>
+                </div>
 
-            {/* 3️⃣ Remaining Content - Mobile: Badges, features, text */}
-            <div className="space-y-4 text-center mb-6">
-              
-              <div className="flex items-center justify-center space-x-2 bg-green-50 w-fit mx-auto px-3 py-1.5 rounded-full">
-                <CheckCircle className="w-4 h-4 text-green-600" />
-                <span className="font-semibold text-xs text-green-700">LOAN APPROVED IN 24 HOURS*</span>
+                <div className="flex flex-wrap gap-3 text-xs">
+                  <div className="flex items-center space-x-1.5">
+                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                    <span className="text-gray-700">Hassle-free process</span>
+                  </div>
+                  <div className="flex items-center space-x-1.5">
+                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
+                    <span className="text-gray-700">Low interest rates</span>
+                  </div>
+                </div>
+
+                <p className="text-gray-600 font-medium text-sm">Trusted by 10,000+ customers</p>
+
+                {/* Features - Mobile */}
+                <div className="grid grid-cols-3 gap-2">
+                  <div className="text-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1.5">
+                      <Clock className="w-4 h-4 text-blue-600" />
+                    </div>
+                    <p className="text-xs font-semibold text-gray-800">Quick Approval</p>
+                  </div>
+                  <div className="text-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1.5">
+                      <Percent className="w-4 h-4 text-blue-600" />
+                    </div>
+                    <p className="text-xs font-semibold text-gray-800">Lowest Rates</p>
+                  </div>
+                  <div className="text-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1.5">
+                      <Shield className="w-4 h-4 text-blue-600" />
+                    </div>
+                    <p className="text-xs font-semibold text-gray-800">100% Secure</p>
+                  </div>
+                </div>
               </div>
 
-              <div className="flex flex-wrap justify-center gap-3 text-xs">
-                <div className="flex items-center space-x-1.5">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Hassle-free process</span>
-                </div>
-                <div className="flex items-center space-x-1.5">
-                  <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Low interest rates</span>
-                </div>
-              </div>
-
-              <p className="text-gray-600 font-medium text-sm">Trusted by 10,000+ customers</p>
-
-              {/* Features - Mobile */}
-              <div className="grid grid-cols-3 gap-2">
-                <div className="text-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1.5">
-                    <Clock className="w-4 h-4 text-blue-600" />
-                  </div>
-                  <p className="text-xs font-semibold text-gray-800">Quick Approval</p>
-                </div>
-                <div className="text-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1.5">
-                    <Percent className="w-4 h-4 text-blue-600" />
-                  </div>
-                  <p className="text-xs font-semibold text-gray-800">Lowest Rates</p>
-                </div>
-                <div className="text-center p-3 bg-white rounded-xl shadow-sm border border-gray-100">
-                  <div className="w-9 h-9 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-1.5">
-                    <Shield className="w-4 h-4 text-blue-600" />
-                  </div>
-                  <p className="text-xs font-semibold text-gray-800">100% Secure</p>
+              {/* Car Image - Mobile: Right side with increased width & proper sizing */}
+              <div className="flex justify-end items-start relative z-20">
+                <div className="w-full max-w-[180px] sm:max-w-[200px]">
+                  <img 
+                    src="/homebanner/image.png" 
+                    alt="Car Loan" 
+                    className="w-full h-auto object-contain drop-shadow-lg"
+                  />
                 </div>
               </div>
             </div>
 
-            {/* 4️⃣ Form - Mobile: Full width at bottom */}
+            {/* Form - Mobile: Full width at bottom */}
             <div className="w-full bg-blue-900 rounded-2xl p-5 text-white shadow-2xl">
               <div className="text-center mb-4">
                 <h3 className="text-sm font-bold mb-1">Check Eligibility in <span className="text-orange-400">30 Sec</span></h3>
@@ -310,9 +310,9 @@ export default function Home() {
             {/* Right Content - Large: Absolute positioned image + form */}
             <div className="relative h-[600px]">
               {/* Car Image - Large: Absolute */}
-              <div className="absolute right-92 bottom-39 w-110 z-10">
+              <div className="absolute right-92 bottom-34 w-115 z-10">
                 <img 
-                  src="/homebanner/image.png" 
+                  src="/homebanner/bannerimg.png" 
                   alt="Car Loan" 
                   className="w-full h-auto object-contain drop-shadow-2xl"
                 />
@@ -389,7 +389,7 @@ export default function Home() {
           </div>
 
           {/* Google Review Badge - Full Width in Hero Section */}
-          <div className="max-w-7xl mx-auto mt-5 lg:mt-0 px-4 sm:px-6 lg:px-0 mt-0 lg:mt-[-135px] w-full">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 mt-0 lg:mt-[-135px] w-full">
             <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100 w-full">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 w-full">
                 <p className="text-gray-800 font-semibold text-center sm:text-left text-sm sm:text-base">Trusted by 10,000+ Customers Across Odisha</p>
