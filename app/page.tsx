@@ -180,7 +180,7 @@ export default function Home() {
               <div className="flex justify-end items-start relative z-20 pl-1">
                 <div className="w-full max-w-[210px] sm:max-w-[210px]">
                   <img 
-                    src="/homebanner/bannerimg.png" 
+                    src="/homebanner/image.png" 
                     alt="Car Loan" 
                     className="w-full h-auto object-contain drop-shadow-lg"
                   />
